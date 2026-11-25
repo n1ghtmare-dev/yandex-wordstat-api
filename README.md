@@ -207,7 +207,7 @@ try {
 }
 ```
 
-Готовый пример сбора семантического ядра в CSV лежит в [`examples/semantic-core.js`](examples/semantic-core.js).
+Готовый пример сбора семантического ядра в CSV лежит в [`examples/semantic-core.js`](examples/semantic-core.js). Пошаговый гайд, как собрать ядро этим инструментом и почистить его бесплатной нейросетью: [«Как собрать семантическое ядро бесплатно: Вордстат + нейросеть»](https://unboxai.ru/blog/sobrat-semanticheskoe-yadro-nejrosetyu).
 
 ## Коды регионов
 
