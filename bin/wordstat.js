@@ -17,7 +17,7 @@ const HELP = `wordstat — Яндекс Вордстат из командной
   --cookies <файл|строка>   cookies Яндекса; иначе WORDSTAT_COOKIES или ./wordstat-cookies.json
   --region <код>            регион Яндекса: 225 Россия, 213 Москва, 2 Санкт-Петербург (по умолчанию все)
   --devices <список>        desktop,phone,tablet (по умолчанию все)
-  --format <формат>         table (по умолчанию в терминале), tsv, csv, json
+  --format <формат>         table (по умолчанию в терминале), tsv, csv, excel (для Excel: «;» и BOM), json
   --limit <n>               вывести только первые n строк
   --delay <мс>              пауза между запросами, по умолчанию 1500
   -h, --help                эта справка
@@ -49,7 +49,7 @@ function cookieSource() {
 function fail(msg, code = 1) { console.error(`wordstat: ${msg}`); process.exit(code) }
 
 const format = o.format ?? (process.stdout.isTTY ? 'table' : 'tsv')
-if (!['table', 'tsv', 'csv', 'json'].includes(format)) fail('--format: table, tsv, csv или json')
+if (!['table', 'tsv', 'csv', 'excel', 'json'].includes(format)) fail('--format: table, tsv, csv, excel или json')
 
 function print(rows) {
   if (o.limit) rows = rows.slice(0, Number(o.limit))
@@ -57,9 +57,11 @@ function print(rows) {
   if (!rows.length) return format === 'table' ? console.error('(пусто)') : undefined
   const cols = Object.keys(rows[0])
   if (format === 'tsv') return console.log([cols.join('\t'), ...rows.map((r) => cols.map((c) => r[c] ?? '').join('\t'))].join('\n'))
-  if (format === 'csv') {
+  if (format === 'csv' || format === 'excel') {
+    // excel: разделитель «;» и BOM — так русский Excel открывает файл двойным кликом, с колонками и кириллицей
+    const sep = format === 'excel' ? ';' : ','
     const q = (v) => (/[",\n;]/.test(String(v ?? '')) ? `"${String(v).replace(/"/g, '""')}"` : String(v ?? ''))
-    return console.log([cols.join(','), ...rows.map((r) => cols.map((c) => q(r[c])).join(','))].join('\n'))
+    return console.log((format === 'excel' ? '﻿' : '') + [cols.join(sep), ...rows.map((r) => cols.map((c) => q(r[c])).join(sep))].join('\n'))
   }
   const show = (v) => (typeof v === 'number' ? v.toLocaleString('ru-RU', { maximumFractionDigits: 6 }) : String(v ?? ''))
   const cells = rows.map((r) => cols.map((c) => show(r[c])))

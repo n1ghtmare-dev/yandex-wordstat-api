@@ -61,7 +61,7 @@ phrase                              count
 
 ## Установка
 
-Нужен Node.js 18 или новее.
+Нужны Node.js 18 или новее и [Git](https://git-scm.com/downloads): npm скачивает пакет с GitHub через git. Если на Windows `npx` пишет `spawn git ENOENT`, поставьте Git for Windows и откройте терминал заново.
 
 ```bash
 # запустить без установки
@@ -106,6 +106,7 @@ wordstat dynamics "chatgpt" --from 2025-01-01 --to 2025-12-31
 wordstat regions "chatgpt" --type cities          # по городам
 wordstat top "chatgpt" --devices phone            # только мобильные
 wordstat batch seeds.txt --similar --format csv > core.csv   # семантика по списку
+wordstat batch seeds.txt --format excel > core.csv          # то же, сразу открывается в Excel
 ```
 
 | Опция | Что делает |
@@ -116,7 +117,7 @@ wordstat batch seeds.txt --similar --format csv > core.csv   # семантик�
 | `--period` | для `dynamics`: `month` (по умолчанию), `week`, `day` |
 | `--from`, `--to` | для `dynamics`: даты `ГГГГ-ММ-ДД` или `ДД.ММ.ГГГГ`. Границы сами выравниваются по месяцам и неделям |
 | `--type` | для `regions`: `all`, `regions`, `cities` |
-| `--format` | `table` (по умолчанию в терминале), `tsv` (по умолчанию при выводе в файл), `csv`, `json` |
+| `--format` | `table` (по умолчанию в терминале), `tsv` (по умолчанию при выводе в файл), `csv`, `excel` (CSV с «;» и BOM: русский Excel открывает двойным кликом), `json` |
 | `--limit <n>` | вывести только первые n строк |
 | `--similar` | для `batch`: собрать ещё и похожие запросы |
 | `--delay <мс>` | пауза между запросами, по умолчанию 1500 |
