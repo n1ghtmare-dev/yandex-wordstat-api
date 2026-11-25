@@ -1,0 +1,136 @@
+{
+ "graph": {
+  "images": {
+   "timeSeries": {
+    "preparedValues": {
+     "absolute": [
+      {
+       "year": 2026,
+       "month": 5,
+       "y": 64353
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "y": 58803
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "y": 57470
+      },
+      {
+       "year": 2026,
+       "month": 8,
+       "y": 62987
+      },
+      {
+       "year": 2026,
+       "month": 9,
+       "y": 72182
+      }
+     ],
+     "relative": [
+      {
+       "year": 2026,
+       "month": 5,
+       "y": 0.0006314258945119543
+      },
+      {
+       "year": 2026,
+       "month": 6,
+       "y": 0.0005410662380086518
+      },
+      {
+       "year": 2026,
+       "month": 7,
+       "y": 0.0005116326263297039
+      },
+      {
+       "year": 2026,
+       "month": 8,
+       "y": 0.0005420907494588023
+      },
+      {
+       "year": 2026,
+       "month": 9,
+       "y": 0.0006941982001593991
+      }
+     ]
+    },
+    "rawValues": [
+     {
+      "startTimestamp": 1780272000000,
+      "absoluteValue": "64 353",
+      "value": "0,00063",
+      "text": "июнь 2026"
+     },
+     {
+      "startTimestamp": 1782864000000,
+      "absoluteValue": "58 803",
+      "value": "0,00054",
+      "text": "июль 2026"
+     },
+     {
+      "startTimestamp": 1785542400000,
+      "absoluteValue": "57 470",
+      "value": "0,00051",
+      "text": "август 2026"
+     },
+     {
+      "startTimestamp": 1788220800000,
+      "absoluteValue": "62 987",
+      "value": "0,00054",
+      "text": "сентябрь 2026"
+     },
+     {
+      "startTimestamp": 1790812800000,
+      "absoluteValue": "72 182",
+      "value": "0,00069",
+      "text": "октябрь 2026"
+     }
+    ]
+   }
+  },
+  "info": {
+   "period": {
+    "startDate": 1780272000000,
+    "endDate": 1793404800000
+   }
+  },
+  "isQueryInvalid": false,
+  "noData": false,
+  "tableData": [
+   {
+    "startTimestamp": 1780272000000,
+    "absoluteValue": "64 353",
+    "value": "0,00063",
+    "text": "июнь 2026"
+   },
+   {
+    "startTimestamp": 1782864000000,
+    "absoluteValue": "58 803",
+    "value": "0,00054",
+    "text": "июль 2026"
+   },
+   {
+    "startTimestamp": 1785542400000,
+    "absoluteValue": "57 470",
+    "value": "0,00051",
+    "text": "август 2026"
+   },
+   {
+    "startTimestamp": 1788220800000,
+    "absoluteValue": "62 987",
+    "value": "0,00054",
+    "text": "сентябрь 2026"
+   },
+   {
+    "startTimestamp": 1790812800000,
+    "absoluteValue": "72 182",
+    "value": "0,00069",
+    "text": "октябрь 2026"
+   }
+  ]
+ }
+}

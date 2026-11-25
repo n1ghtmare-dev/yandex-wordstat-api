@@ -1,0 +1,47 @@
+{
+ "map": {
+  "isQueryInvalid": false,
+  "images": null,
+  "info": {
+   "period": {
+    "startDate": 1789678800000,
+    "endDate": 1794776400000
+   }
+  },
+  "noData": false,
+  "tableData": [
+   {
+    "type": "regions",
+    "text": "Москва и область",
+    "value": "111,19",
+    "absoluteValue": "15 537",
+    "relativeValue": "0,000781",
+    "sortText": "Москва и область"
+   },
+   {
+    "type": "cities",
+    "text": "Санкт-Петербург",
+    "value": "116,53",
+    "absoluteValue": "4 200",
+    "relativeValue": "0,000819",
+    "sortText": "Санкт-Петербург"
+   },
+   {
+    "type": "regions",
+    "text": "Центр",
+    "value": "99,76",
+    "absoluteValue": "22 777",
+    "relativeValue": "0,000701",
+    "sortText": "Центр"
+   },
+   {
+    "type": "cities",
+    "text": "Белгород",
+    "value": "82,93",
+    "absoluteValue": "204",
+    "relativeValue": "0,000583",
+    "sortText": "Белгород"
+   }
+  ]
+ }
+}

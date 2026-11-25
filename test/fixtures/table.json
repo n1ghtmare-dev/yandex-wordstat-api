@@ -1,0 +1,65 @@
+{
+ "table": {
+  "images": null,
+  "info": {
+   "hasNextPage": true,
+   "page": 0,
+   "period": {
+    "startDate": 1789678800000,
+    "endDate": 1794776400000
+   }
+  },
+  "isQueryInvalid": false,
+  "tableData": {
+   "associations": [
+    {
+     "isAssociations": true,
+     "value": "152340",
+     "text": "миднайт"
+    },
+    {
+     "isAssociations": true,
+     "value": "14843",
+     "text": "миджорни"
+    },
+    {
+     "isAssociations": true,
+     "value": "28900",
+     "text": "джон джонс"
+    }
+   ],
+   "popular": [
+    {
+     "isAssociations": false,
+     "value": "71527",
+     "text": "midjourney"
+    },
+    {
+     "isAssociations": false,
+     "value": "18660",
+     "text": "midjourney нейросеть"
+    },
+    {
+     "isAssociations": false,
+     "value": "5992",
+     "text": "midjourney купить"
+    },
+    {
+     "isAssociations": false,
+     "value": "4827",
+     "text": "подписка на midjourney"
+    },
+    {
+     "isAssociations": false,
+     "value": "4050",
+     "text": "купить подписку на midjourney"
+    }
+   ]
+  },
+  "noData": {
+   "associations": false,
+   "popular": false
+  }
+ },
+ "totalValue": 71527
+}

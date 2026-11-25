@@ -1,0 +1,6 @@
+node_modules/
+*.tgz
+wordstat-cookies.*
+cookies.txt
+*.cookies.json
+.env

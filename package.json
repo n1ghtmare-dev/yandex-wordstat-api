@@ -1,0 +1,18 @@
+{
+  "name": "yandex-wordstat-api",
+  "version": "1.0.0",
+  "description": "Бесплатный API и CLI для Яндекс Вордстата: частотность, похожие запросы, динамика и регионы через ваш аккаунт Яндекса. Без ключей Yandex Cloud и без зависимостей.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": { ".": "./src/index.js" },
+  "types": "./src/index.d.ts",
+  "bin": { "wordstat": "bin/wordstat.js" },
+  "files": ["src", "bin"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "keywords": ["wordstat", "yandex", "yandex-wordstat", "wordstat-api", "вордстат", "яндекс вордстат", "seo", "keywords", "keyword-research", "semantic-core", "семантическое ядро", "частотность", "парсер вордстата", "cli"],
+  "repository": { "type": "git", "url": "git+https://github.com/n1ghtmare-dev/yandex-wordstat-api.git" },
+  "homepage": "https://github.com/n1ghtmare-dev/yandex-wordstat-api#readme",
+  "bugs": "https://github.com/n1ghtmare-dev/yandex-wordstat-api/issues",
+  "license": "MIT"
+}
