@@ -273,8 +273,4 @@ const trend = await ws.dynamics('chatgpt', { period: 'week' }) // [{ period, dat
 const geo = await ws.regions('chatgpt', { type: 'cities' })    // [{ name, type, count, share, affinity }]
 ```
 
-Methods: `top`, `similar`, `table`, `count`, `dynamics`, `regions`. CLI commands: `top`, `similar`, `count`, `dynamics`, `regions`, `batch`. Output formats are `table`, `tsv`, `csv` and `json`. Only the `Session_id` and `sessionid2` cookies are used. Keep them secret. The client is unofficial, rate-limited by default (1.5 s between requests) and mirrors the requests of the Wordstat web page.
-
----
-
-MIT © n1ghtmare-dev. Сделано для сбора семантики проекта [НейроХалява](https://unboxai.ru), где мы ищем бесплатные нейросети, которые работают из России.
+Methods: `top`, `similar`, `table`, `count`, `dynamics`, `regions`. CLI commands: `top`, `similar`, `count`, `dynamics`, `regions`, `batch`. Output formats are `table`, `tsv`, `csv`, `excel` and `json`. Only the `Session_id` and `sessionid2` cookies are used. Keep them secret. The client is unofficial, rate-limited by default (1.5 s between requests) and mirrors the requests of the Wordstat web page.
